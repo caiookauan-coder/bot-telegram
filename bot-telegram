@@ -19,4 +19,8 @@ def responder(message):
 
     bot.reply_to(message, resposta.choices[0].message.content)
 
+pyTelegramBotAPI
+openai
+
 bot.infinity_polling()
+
