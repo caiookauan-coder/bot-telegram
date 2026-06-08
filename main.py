@@ -1,0 +1,13 @@
+ import telebot
+   import os
+
+TOKEN = os.getenv("8037756153:AAHC3HRsY1TEDtWW9ZtGRKETkbCYv79Yr1A"
+                 )
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(func=lambda m: True)
+def responder(message):
+    bot.reply_to(message, "Olá! Estou funcionando.")
+
+bot.infinity_polling()
